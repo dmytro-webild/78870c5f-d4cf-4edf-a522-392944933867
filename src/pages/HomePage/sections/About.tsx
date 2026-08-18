@@ -12,7 +12,7 @@ export default function AboutSection(): React.JSX.Element {
               <AboutTextSplit
           title="OUR STORY"
           descriptions={[
-            "Located in the heart of Columbia, Taste And See was founded on the belief that real soul food is about more than just nutrition—it's about connection.",
+            "Located in the heart of Columbia, Taste And See Soul Food Kitchen S was founded on the belief that real soul food is about more than just nutrition—it's about connection.",
             "Our kitchen is a labor of love, bringing authentic Southern recipes to our community.",
           ]}
           textAnimation="slide-up"
