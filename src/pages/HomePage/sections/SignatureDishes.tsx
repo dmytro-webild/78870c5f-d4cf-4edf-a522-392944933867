@@ -9,12 +9,12 @@ import { cls } from "@/lib/utils";
 const items = [
   {
     title: "Turkey Wings",
-    description: "Tender, slow-baked turkey wings smothered in rich homemade pan gravy.",
+    description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070776575-ct31mfjl.webp"
   },
   {
     title: "Pork Chops",
-    description: "Hearty golden fried pork chops seasoned with classic Southern herbs.",
+    description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070696743-9h6avbwq.webp"
   },
   {
@@ -23,17 +23,17 @@ const items = [
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070766688-s9gi7mxo.webp"
   },
   {
-    title: "Oxtails",
+    title: "",
     description: "",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070716976-o5kdj5a9.webp"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070681462-5gce7p6k.webp"
   },
   {
-    title: "Mac & Cheese",
+    title: "",
     description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070727441-qfbye5ui.webp"
   },
   {
-    title: "Rice & Gravy",
+    title: "",
     description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp"
   },
