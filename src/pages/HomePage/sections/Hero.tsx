@@ -15,7 +15,7 @@ export default function HeroSection(): React.JSX.Element {
         description="Comforting Southern favorites, generous plates, and homemade flavor served with love in Columbia, SC."
         primaryButton={{"href":"#order","text":"ORDER NOW"}}
         secondaryButton={{"text":"VIEW MENU","href":"#menu"}}
-        imageSrc="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
+        imageSrc="https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070757528-w5tn76jd.webp"
         textAnimation="slide-up"
       />
         </SectionErrorBoundary>
