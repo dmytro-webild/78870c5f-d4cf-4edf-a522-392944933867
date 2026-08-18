@@ -11,7 +11,7 @@ export default function SignatureDishesSection(): React.JSX.Element {
         <SectionErrorBoundary name="signature-dishes">
               <FeaturesImageBento
           tag="Our Favorites"
-          title="THE PLATES PEOPLE COME BACK FOR"
+          title="THE MENU THAT WILL BRING YOUR TASTE BUDS TO LIFE"
           description="Explore the signature dishes that make Taste And See a local favorite in Columbia."
           items={[
             {
@@ -37,17 +37,17 @@ export default function SignatureDishesSection(): React.JSX.Element {
             {
               title: "Mac & Cheese",
               description: "Creamy, baked-to-order Southern style.",
-              imageSrc: "http://img.b2bpic.net/free-photo/front-view-delicious-pasta-soup-from-spiral-italian-pasta-with-greens-dark-desk-dish-italian-pasta-dinner-sauce-soup_140725-110055.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070727441-qfbye5ui.webp",
             },
             {
               title: "Rice & Gravy",
               description: "The ultimate Southern comfort staple.",
-              imageSrc: "http://img.b2bpic.net/free-photo/delicious-high-protein-vegan-meal_23-2149039362.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070641068-w9blth9e.webp",
             },
             {
               title: "Cornbread",
               description: "Golden, moist, and freshly baked.",
-              imageSrc: "http://img.b2bpic.net/free-photo/buckwheat-with-meat-vegetables-tomato-sauce_140725-6521.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp",
             },
           ]}
           textAnimation="fade-blur"
