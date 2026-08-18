@@ -9,38 +9,38 @@ import { cls } from "@/lib/utils";
 const items = [
   {
     title: "Turkey Wings",
-    description: "Tender, flavorful wings with classic sides.",
-    imageSrc: "http://img.b2bpic.net/free-photo/family-sitting-table-with-backed-ham_23-2147947986.jpg"
+    description: "Tender, slow-baked turkey wings smothered in rich homemade pan gravy.",
+    imageSrc: "https://picsum.photos/seed/156848161/1200/800"
   },
   {
     title: "Pork Chops",
-    description: "Hearty chops with Southern seasoning.",
-    imageSrc: "http://img.b2bpic.net/free-photo/pork-chop-steak_1339-5911.jpg"
+    description: "Hearty golden fried pork chops seasoned with classic Southern herbs.",
+    imageSrc: "https://picsum.photos/seed/718095974/1200/800"
   },
   {
     title: "Lamb Chops",
-    description: "Premium soul food, cooked to perfection.",
-    imageSrc: "http://img.b2bpic.net/free-photo/cooked-lamb-ribs-front-view_23-2148516965.jpg"
+    description: "Premium seared lamb chops served juicy with authentic house seasonings.",
+    imageSrc: "https://picsum.photos/seed/1526810141/1200/800"
   },
   {
     title: "Oxtails",
-    description: "Slow-cooked savory, rich comfort food.",
-    imageSrc: "http://img.b2bpic.net/free-photo/grilled-lamb-chops_1203-9879.jpg"
+    description: "Slow-braised savory oxtails in deeply spiced, velvety brown gravy.",
+    imageSrc: "https://picsum.photos/seed/2043234165/1200/800"
   },
   {
     title: "Mac & Cheese",
-    description: "Creamy, baked-to-order Southern style.",
+    description: "Creamy, baked-to-order five-cheese Southern macaroni.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070727441-qfbye5ui.webp"
   },
   {
     title: "Rice & Gravy",
-    description: "The ultimate Southern comfort staple.",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp?_wi=1"
+    description: "Fluffy white rice smothered in rich house-made Southern gravy.",
+    imageSrc: "https://picsum.photos/seed/492879015/1200/800"
   },
   {
     title: "Cornbread",
-    description: "Golden, moist, and freshly baked.",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp?_wi=2"
+    description: "Golden, buttery, and freshly baked sweet skillet cornbread.",
+    imageSrc: "https://picsum.photos/seed/940689572/1200/800"
   }
 ];
 
