@@ -42,7 +42,7 @@ export default function SignatureDishesSection(): React.JSX.Element {
             {
               title: "Rice & Gravy",
               description: "The ultimate Southern comfort staple.",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070641068-w9blth9e.webp",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp",
             },
             {
               title: "Cornbread",
