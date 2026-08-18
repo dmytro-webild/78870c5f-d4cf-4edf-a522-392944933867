@@ -10,37 +10,37 @@ const items = [
   {
     title: "Turkey Wings",
     description: "Tender, slow-baked turkey wings smothered in rich homemade pan gravy.",
-    imageSrc: "https://picsum.photos/seed/156848161/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070776575-ct31mfjl.webp"
   },
   {
     title: "Pork Chops",
     description: "Hearty golden fried pork chops seasoned with classic Southern herbs.",
-    imageSrc: "https://picsum.photos/seed/718095974/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070696743-9h6avbwq.webp"
   },
   {
     title: "Lamb Chops",
-    description: "Premium seared lamb chops served juicy with authentic house seasonings.",
-    imageSrc: "https://picsum.photos/seed/1526810141/1200/800"
+    description: "",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070766688-s9gi7mxo.webp"
   },
   {
     title: "Oxtails",
-    description: "Slow-braised savory oxtails in deeply spiced, velvety brown gravy.",
-    imageSrc: "https://picsum.photos/seed/2043234165/1200/800"
+    description: "",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070716976-o5kdj5a9.webp"
   },
   {
     title: "Mac & Cheese",
-    description: "Creamy, baked-to-order five-cheese Southern macaroni.",
+    description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070727441-qfbye5ui.webp"
   },
   {
     title: "Rice & Gravy",
-    description: "Fluffy white rice smothered in rich house-made Southern gravy.",
-    imageSrc: "https://picsum.photos/seed/492879015/1200/800"
+    description: "",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp"
   },
   {
-    title: "Cornbread",
-    description: "Golden, buttery, and freshly baked sweet skillet cornbread.",
-    imageSrc: "https://picsum.photos/seed/940689572/1200/800"
+    title: "",
+    description: "",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070671583-biua6861.webp"
   }
 ];
 
