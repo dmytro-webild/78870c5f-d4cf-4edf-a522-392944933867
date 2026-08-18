@@ -5,18 +5,18 @@ import { Utensils, Check, ArrowRight } from 'lucide-react';
 const MAINS = [
   { id: 'turkey-wings', name: 'Turkey Wings', desc: 'Tender, slow-baked & savory', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070641068-w9blth9e.webp' },
   { id: 'pork-chops', name: 'Pork Chops', desc: 'Golden seasoned & juicy', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070696743-9h6avbwq.webp' },
-  { id: 'lamb-chops', name: 'Lamb Chops', desc: 'Premium seared chops', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070716976-o5kdj5a9.webp' },
-  { id: 'oxtails', name: 'Oxtails', desc: 'Rich gravy & slow-braised', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070766688-s9gi7mxo.webp' },
+  { id: 'lamb-chops', name: '', desc: 'Premium seared chops', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070716976-o5kdj5a9.webp' },
+  { id: 'oxtails', name: '', desc: 'Rich gravy & slow-braised', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070766688-s9gi7mxo.webp' },
   { id: 'fried-chicken', name: 'Southern Fried Chicken', desc: 'Crispy golden classic', image: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80' },
   { id: 'fried-fish', name: 'Fried Fish', desc: 'Seasoned & fried light', image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80' },
 ];
 
 const SIDES = [
-  { id: 'mac', name: 'Baked Mac & Cheese', tag: 'Must-Have' },
+  { id: 'mac', name: 'Baked ', tag: 'Must-Have' },
   { id: 'collards', name: 'Collard Greens', tag: 'Traditional' },
   { id: 'yams', name: 'Candied Yams', tag: 'Sweet' },
   { id: 'green-beans', name: 'Southern Green Beans', tag: 'Classic' },
-  { id: 'rice-gravy', name: 'Rice & Gravy', tag: 'Comfort' },
+  { id: 'rice-gravy', name: '', tag: 'Comfort' },
   { id: 'cabbage', name: 'Smothered Cabbage', tag: 'Savory' },
   { id: 'potato-salad', name: 'Homemade Potato Salad', tag: 'Fresh' },
 ];
