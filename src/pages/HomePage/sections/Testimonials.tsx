@@ -8,15 +8,46 @@ import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 export default function TestimonialsSection(): React.JSX.Element {
   return (
     <div id="testimonials" data-section="testimonials">
-        <SectionErrorBoundary name="testimonials">
-              <TestimonialMarqueeCards
-        tag="Kind Words"
-        title="THE TASTE OF COLUMBIA"
-        testimonials={[{"name":"Sarah J.","quote":"Best turkey wings I've had in South Carolina. Hands down.","role":"Local Foodie"},{"role":"Regular","quote":"Taste And See feels like Sunday dinner every day.","name":"Michael D."},{"role":"Visitor","quote":"The oxtails were incredible. Truly soul-satisfying cooking.","name":"Emily R."},{"name":"David K.","quote":"Mac and cheese perfection. Don't skip the yams!","role":"Local"},{"role":"Regular","name":"Lisa T.","quote":"Homemade love in every bite. Such friendly service."}]}
-        textAnimation="slide-up"
-        description="See why our neighbors call us the best soul food spot in town."
-      />
-        </SectionErrorBoundary>
-      </div>
+      <SectionErrorBoundary name="testimonials">
+        <TestimonialMarqueeCards
+          tag="Kind Words"
+          title="THE TASTE OF COLUMBIA"
+          testimonials={[
+            {
+              name: "Sarah J.",
+              role: "Local Foodie",
+              quote: "Best turkey wings I've had in South Carolina. Hands down.",
+              imageSrc: "",
+            },
+            {
+              name: "Michael D.",
+              role: "Regular",
+              quote: "Taste And See feels like Sunday dinner every day.",
+              imageSrc: "",
+            },
+            {
+              name: "Emily R.",
+              role: "Visitor",
+              quote: "The oxtails were incredible. Truly soul-satisfying cooking.",
+              imageSrc: "",
+            },
+            {
+              name: "David K.",
+              role: "Local",
+              quote: "Mac and cheese perfection. Don't skip the yams!",
+              imageSrc: "",
+            },
+            {
+              name: "Lisa T.",
+              role: "Regular",
+              quote: "Homemade love in every bite. Such friendly service.",
+              imageSrc: "",
+            },
+          ]}
+          textAnimation="slide-up"
+          description="See why our neighbors call us the best soul food spot in town."
+        />
+      </SectionErrorBoundary>
+    </div>
   );
 }
