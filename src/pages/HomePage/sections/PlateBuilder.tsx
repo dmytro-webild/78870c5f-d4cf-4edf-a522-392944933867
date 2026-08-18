@@ -3,7 +3,7 @@ import ScrollReveal from '@/components/ui/ScrollReveal';
 import { Utensils, Check, ArrowRight } from 'lucide-react';
 
 const MAINS = [
-  { id: 'turkey-wings', name: 'Turkey Wings', desc: 'Tender, slow-baked & savory', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070776575-ct31mfjl.webp' },
+  { id: 'turkey-wings', name: 'Turkey Wings', desc: 'Tender, slow-baked & savory', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070641068-w9blth9e.webp' },
   { id: 'pork-chops', name: 'Pork Chops', desc: 'Golden seasoned & juicy', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070696743-9h6avbwq.webp' },
   { id: 'lamb-chops', name: 'Lamb Chops', desc: 'Premium seared chops', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070716976-o5kdj5a9.webp' },
   { id: 'oxtails', name: 'Oxtails', desc: 'Rich gravy & slow-braised', image: 'https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070766688-s9gi7mxo.webp' },
