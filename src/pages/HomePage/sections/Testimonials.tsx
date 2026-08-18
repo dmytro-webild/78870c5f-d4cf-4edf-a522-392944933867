@@ -10,43 +10,12 @@ export default function TestimonialsSection(): React.JSX.Element {
     <div id="testimonials" data-section="testimonials">
         <SectionErrorBoundary name="testimonials">
               <TestimonialMarqueeCards
-          tag="Kind Words"
-          title="THE TASTE OF COLUMBIA"
-          testimonials={[
-            {
-              name: "Sarah J.",
-              role: "Local Foodie",
-              quote: "Best turkey wings I've had in South Carolina. Hands down.",
-              imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-man-posing-indoors_23-2151038687.jpg",
-            },
-            {
-              name: "Michael D.",
-              role: "Regular",
-              quote: "Taste And See feels like Sunday dinner every day.",
-              imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-taking-selfie_23-2149250086.jpg",
-            },
-            {
-              name: "Emily R.",
-              role: "Visitor",
-              quote: "The oxtails were incredible. Truly soul-satisfying cooking.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-woman-having-fun-while-sitting-with-her-friends-dining-table-eating-dessert_637285-3239.jpg",
-            },
-            {
-              name: "David K.",
-              role: "Local",
-              quote: "Mac and cheese perfection. Don't skip the yams!",
-              imageSrc: "http://img.b2bpic.net/free-photo/crazy-chef-worried-expression_1194-1351.jpg",
-            },
-            {
-              name: "Lisa T.",
-              role: "Regular",
-              quote: "Homemade love in every bite. Such friendly service.",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-young-caucasian-male-barber-wearing-glasses-wavy-hair-band-uniform-standing-profile-view-doing-ok-sign_141793-98540.jpg",
-            },
-          ]}
-          textAnimation="slide-up"
-          description="See why our neighbors call us the best soul food spot in town."
-        />
+        tag="Kind Words"
+        title="THE TASTE OF COLUMBIA"
+        testimonials={[{"name":"Sarah J.","quote":"Best turkey wings I've had in South Carolina. Hands down.","role":"Local Foodie"},{"role":"Regular","quote":"Taste And See feels like Sunday dinner every day.","name":"Michael D."},{"role":"Visitor","quote":"The oxtails were incredible. Truly soul-satisfying cooking.","name":"Emily R."},{"name":"David K.","quote":"Mac and cheese perfection. Don't skip the yams!","role":"Local"},{"role":"Regular","name":"Lisa T.","quote":"Homemade love in every bite. Such friendly service."}]}
+        textAnimation="slide-up"
+        description="See why our neighbors call us the best soul food spot in town."
+      />
         </SectionErrorBoundary>
       </div>
   );
