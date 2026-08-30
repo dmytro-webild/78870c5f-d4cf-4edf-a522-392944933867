@@ -35,7 +35,7 @@ export default function Layout() {
     "name": "Testimonials",
     "href": "#testimonials"
   },
-  { name: "Products", href: "/products" },
+  { name: "Order Online", href: "/order" },
 
 ];
 
@@ -47,7 +47,7 @@ export default function Layout() {
       logo="Taste And See"
       ctaButton={{
         text: "Order Now",
-        href: "#order",
+        href: "/order",
       }}
      navItems={navItems} />
       </SectionErrorBoundary>
