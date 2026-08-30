@@ -8,17 +8,17 @@ import { cls } from "@/lib/utils";
 
 const items = [
   {
-    title: "Turkey Wings",
+    title: "",
     description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070776575-ct31mfjl.webp"
   },
   {
-    title: "Pork Chops",
+    title: "",
     description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070696743-9h6avbwq.webp"
   },
   {
-    title: "Lamb Chops",
+    title: "",
     description: "",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070766688-s9gi7mxo.webp"
   },
