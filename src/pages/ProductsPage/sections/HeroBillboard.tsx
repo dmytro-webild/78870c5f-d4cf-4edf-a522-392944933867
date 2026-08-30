@@ -5,12 +5,23 @@ import React from 'react';
 import Button from "@/components/ui/Button";
 import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
 import TextAnimation from "@/components/ui/TextAnimation";
-import ImageOrVideo from "@/components/ui/ImageOrVideo";
-import ScrollReveal from "@/components/ui/ScrollReveal";
-import AvatarGroup from "@/components/ui/AvatarGroup";
 
 export default function HeroBillboardSection(): React.JSX.Element {
   return (
-    <div data-webild-section="HeroBillboard"><section aria-label="Hero section" className="relative pt-25 pb-20 md:pt-30"><HeroBackgroundSlot /><div className="flex flex-col gap-12 md:gap-15 w-content-width mx-auto"><div className="flex flex-col items-center gap-3 text-center"><AvatarGroup avatarsSrc={["https://img.freepik.com/free-photo/portrait-smiling-woman_23-2148213400.jpg","https://img.freepik.com/free-photo/cheerful-man-portrait_23-2149022635.jpg","https://img.freepik.com/free-photo/happy-senior-man_23-2149170889.jpg"]} label="2,500+ satisfied Southern food lovers" className="mb-1" /><TextAnimation text="Hearty Southern Favorites Made Fresh Daily" variant="slide-up" gradientText={true} tag="h1" className="md:max-w-8/10 text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Explore our full menu of crispy fried chicken, tender baskets, golden fried fish, homestyle sides, and sweet specialty drinks. Made fresh with love and authentic Southern flavor." variant="slide-up" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="View Menu" href="#menu" variant="primary" /><Button text="Order Pickup" href="#order" variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="fade" delay={0.2} className="w-full p-2 xl:p-3 2xl:p-4 card rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/crispy-fried-chicken-legs-wooden-board_1150-18884.jpg" className="aspect-4/5 md:aspect-video" /></ScrollReveal></div></section></div>
+    <div data-webild-section="hero-billboard">
+  <section aria-label="Hero section" className="relative">
+    <HeroBackgroundSlot />
+    <div className="flex flex-col gap-8 w-content-width mx-auto">
+      <div className="flex flex-col items-center gap-3 text-center">
+        <TextAnimation text="Hearty Southern Favorites Made Fresh Daily" variant="slide-up" gradientText={true} tag="h1" className="md:max-w-8/10 text-6xl md:text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center text-balance" />
+        <TextAnimation text="Explore our full menu of crispy fried chicken, tender baskets, golden fried fish, homestyle sides, and sweet specialty drinks. Made fresh with love and authentic Southern flavor." variant="slide-up" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-balance" />
+        <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
+          <Button text="View Menu" href="#menu" variant="primary" />
+          <Button text="Order Pickup" href="#order" variant="secondary" animationDelay={0.1} />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
   );
 }
