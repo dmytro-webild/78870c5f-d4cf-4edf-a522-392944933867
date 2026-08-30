@@ -1,78 +1,24 @@
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import HeroBillboard from "@/components/sections/hero/HeroBillboard";
+import Button from "@/components/ui/Button";
+import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import AvatarGroup from "@/components/ui/AvatarGroup";
 import ProductQuantityCards from "@/components/sections/product/ProductQuantityCards";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
-import { routes } from "@/routes";
-
-const menuItems = [
-  { name: "2 Tender Kids Meal", price: "$10.58", imageSrc: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" },
-  { name: "3 Pc Chicken Entree", price: "$19.06", imageSrc: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80" },
-  { name: "3 Tender Basket", price: "$15.88", imageSrc: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" },
-  { name: "6 Pc Shrimp Meal", price: "$15.88", imageSrc: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80" },
-  { name: "6 Pc Cut Wing Meal", price: "$18.00", imageSrc: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=600&q=80" },
-  { name: "8 Pc Shrimp Meal", price: "$18.00", imageSrc: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80" },
-  { name: "8 Pc Cut Wing Meal", price: "$20.12", imageSrc: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=600&q=80" },
-  { name: "Amir's Iced Tea", price: "$3.16", imageSrc: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" },
-  { name: "Arnold Palmer", price: "$3.16", imageSrc: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" },
-  { name: "Banana Pudding", price: "$4.22", imageSrc: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" },
-  { name: "Big Baby's Kool Aid", price: "$3.16", imageSrc: "https://images.unsplash.com/photo-1543253687-c931c8e01820?auto=format&fit=crop&w=600&q=80" },
-  { name: "Black Eyed Peas", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" },
-  { name: "Bottled Water", price: "$2.38", imageSrc: "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80" },
-  { name: "Cabbage", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" },
-  { name: "Candied Yams", price: "$4.54", imageSrc: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" },
-  { name: "Canned Drinks", price: "$1.06", imageSrc: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80" },
-  { name: "Corn Nuggets", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80" },
-  { name: "Field Peas", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" },
-  { name: "French Fries", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" },
-  { name: "Fried Fish (2 Pieces)", price: "$19.06", imageSrc: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" },
-  { name: "Fried Okra", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" },
-  { name: "Fried Pork Chops", price: "$19.06", imageSrc: "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=600&q=80" },
-  { name: "Fries", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" },
-  { name: "Garlic Mashed Potatoes", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1514944288352-fffac99f0bdf?auto=format&fit=crop&w=600&q=80" },
-  { name: "Green Beans", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0?auto=format&fit=crop&w=600&q=80" },
-  { name: "Hushpuppies (6 Count)", price: "$2.10", imageSrc: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" },
-  { name: "Hushpuppies (12 Count)", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" },
-  { name: "Leo's Lemonade", price: "$3.16", imageSrc: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" },
-  { name: "Lima Beans", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" },
-  { name: "Macaroni & Cheese", price: "$4.12", imageSrc: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80" }
-];
 
 export default function ProductsPage() {
-  const navItems = routes.map((r) => ({ name: r.label, href: r.path }));
-
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <NavbarCentered
-        logo="Delicious Kitchen"
-        navItems={navItems}
-        ctaButton={{ text: "Order Now", href: "/contact" }}
-      />
-      <HeroBillboard
-        tag="Fresh & Hot"
-        title="Our Full Menu"
-        description="Explore our delicious entrees, baskets, drinks, and homemade sides."
-        primaryButton={{ text: "View Products", href: "#products" }}
-        secondaryButton={{ text: "Contact Us", href: "/contact" }}
-        imageSrc="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+    <>
+      <div data-webild-section="HeroBillboard"><section aria-label="Hero section" className="relative pt-25 pb-20 md:pt-30"><HeroBackgroundSlot /><div className="flex flex-col gap-12 md:gap-15 w-content-width mx-auto"><div className="flex flex-col items-center gap-3 text-center"><AvatarGroup avatarsSrc={["https://img.freepik.com/free-photo/portrait-smiling-woman_23-2148213400.jpg","https://img.freepik.com/free-photo/cheerful-man-portrait_23-2149022635.jpg","https://img.freepik.com/free-photo/happy-senior-man_23-2149170889.jpg"]} label="2,500+ satisfied Southern food lovers" className="mb-1" /><TextAnimation text="Hearty Southern Favorites Made Fresh Daily" variant="slide-up" gradientText={true} tag="h1" className="md:max-w-8/10 text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Explore our full menu of crispy fried chicken, tender baskets, golden fried fish, homestyle sides, and sweet specialty drinks. Made fresh with love and authentic Southern flavor." variant="slide-up" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="View Menu" href="#menu" variant="primary" /><Button text="Order Pickup" href="#order" variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="fade" delay={0.2} className="w-full p-2 xl:p-3 2xl:p-4 card rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/crispy-fried-chicken-legs-wooden-board_1150-18884.jpg" className="aspect-4/5 md:aspect-video" /></ScrollReveal></div></section></div>
+      <div data-webild-section="ProductQuantityCards"><ProductQuantityCards
+        tag="Southern Kitchen Menu"
+        title="Fresh Cooked Comfort Plates"
+        description="Hearty fried entrees, golden basket combos, homestyle sides, and sweet specialty drinks made fresh with authentic flavor."
         textAnimation="slide-up"
-      />
-      <div id="products">
-        <ProductQuantityCards
-          tag="Menu Items"
-          title="Delicious Meals & Drinks"
-          description="Select your favorites and add them to your order."
-          products={menuItems}
-          textAnimation="slide-up"
-        />
-      </div>
-      <FooterSimple
-        brand="Delicious Kitchen"
-        columns={[
-          { title: "Navigation", items: navItems.map((item) => ({ label: item.name, href: item.href })) }
-        ]}
-        copyright="© 2025 Delicious Kitchen. All rights reserved."
-        links={[{ label: "Privacy Policy", href: "#" }]}
-      />
-    </div>
+        primaryButton={{"text":"Order for Pickup","href":"/ordering"}}
+        secondaryButton={{"text":"View All Sides","href":"#sides"}}
+        products={[{"name":"3 Pc Chicken Entree","price":"$19.06","imageSrc":"https://img.freepik.com/free-photo/crispy-fried-chicken-plate_144627-24543.jpg"},{"name":"3 Tender Basket","price":"$15.88","imageSrc":"https://img.freepik.com/free-photo/crispy-chicken-fingers-french-fries_144627-24538.jpg"},{"name":"Fried Fish (2 Pieces)","price":"$19.06","imageSrc":"https://img.freepik.com/free-photo/crispy-fried-fish-fillet-french-fries_144627-24560.jpg"},{"name":"6 Pc Shrimp Meal","price":"$15.88","imageSrc":"https://img.freepik.com/free-photo/crispy-fried-shrimp-basket_144627-24580.jpg"},{"name":"8 Pc Cut Wing Meal","price":"$20.12","imageSrc":"https://img.freepik.com/free-photo/spicy-chicken-wings-sauce_144627-24550.jpg"},{"name":"Fried Pork Chops","price":"$19.06","imageSrc":"https://img.freepik.com/free-photo/grilled-pork-chops-plate_144627-24520.jpg"},{"name":"2 Tender Kids Meal","price":"$10.58","imageSrc":"https://img.freepik.com/free-photo/chicken-tenders-fries-basket_144627-24535.jpg"},{"name":"Candied Yams","price":"$4.54","imageSrc":"https://img.freepik.com/free-photo/sweet-roasted-yams-dish_144627-24515.jpg"},{"name":"Leo’s Lemonade","price":"$3.16","imageSrc":"https://img.freepik.com/free-photo/iced-lemonade-glass-citrus-slice_144627-24590.jpg"},{"name":"Banana Pudding","price":"$4.22","imageSrc":"https://img.freepik.com/free-photo/sweet-banana-pudding-dessert-glass_144627-24600.jpg"}]}
+      /></div>
+    </>
   );
 }
