@@ -5,14 +5,11 @@ import React from 'react';
 import Button from "@/components/ui/Button";
 import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
 import TextAnimation from "@/components/ui/TextAnimation";
-import ImageOrVideo from "@/components/ui/ImageOrVideo";
-import ScrollReveal from "@/components/ui/ScrollReveal";
-import AvatarGroup from "@/components/ui/AvatarGroup";
 
 export default function HeroBillboardSection(): React.JSX.Element {
   return (
     <div data-webild-section="hero-billboard">
-  <section aria-label="Hero section" className="relative pt-25 pb-12 md:pt-30">
+  <section aria-label="Hero section" className="relative">
     <HeroBackgroundSlot />
     <div className="flex flex-col gap-8 w-content-width mx-auto">
       <div className="flex flex-col items-center gap-3 text-center">
