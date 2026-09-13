@@ -3,12 +3,16 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 
 import ProductsPage from "@/pages/ProductsPage";
+import ContactPage from "@/pages/ContactPage";
+import CheckoutPage from "@/pages/CheckoutPage";
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Route>
     </Routes>
   );

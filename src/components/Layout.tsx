@@ -37,6 +37,10 @@ export default function Layout() {
   },
   { name: "Order Online", href: "/order" },
   { name: "Products", href: "/products" },
+  { name: "Contact", href: "/contact" },
+  { name: "Checkout", href: "/checkout" },
+
+
 
 
 ];
