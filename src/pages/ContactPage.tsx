@@ -1,73 +1,39 @@
 import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
 import FaqSimple from "@/components/sections/faq/FaqSimple";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
-
 export default function ContactPage() {
   const navItems = routes.map((r) => ({ name: r.label, href: r.path }));
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <NavbarCentered
-        logo="Webild"
-        navItems={navItems}
-        ctaButton={{ text: "Get Started", href: "/contact" }}
-      />
-      <main className="pt-16">
+    <div className="min-h-svh bg-background text-foreground">
+      <main className="">
         <ContactSplitForm
-          tag="Contact Us"
-          title="We'd love to hear from you"
-          description="Send us a message and our dedicated team will get back to you within 24 hours."
+          tag="Get In Touch"
+          title="Visit Us or Send a Message"
+          description="Taste & See Soul Food Kitchen is located at 6820 N Main St Ste E, Columbia, SC. Call 803-401-5671 for pickup orders, catering inquiries, or general questions!"
           inputs={[
             { name: "fullName", type: "text", placeholder: "Your Full Name", required: true },
-            { name: "email", type: "email", placeholder: "you@example.com", required: true },
-            { name: "subject", type: "text", placeholder: "Subject", required: false },
+            { name: "email", type: "email", placeholder: "Email Address or Phone Number", required: true },
+            { name: "subject", type: "text", placeholder: "Subject (e.g. Catering, Feedback)", required: false },
           ]}
-          textarea={{ name: "message", placeholder: "Tell us how we can help...", rows: 5, required: true }}
-          buttonText="Send Message"
-          imageSrc="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&q=80"
+          textarea={{ name: "message", placeholder: "Tell us about your event or inquiry...", rows: 5, required: true }}
+          buttonText="Send Inquiries"
+          imageSrc="https://picsum.photos/seed/1634594426/1200/800"
           textAnimation="slide-up"
         />
         <FaqSimple
-          tag="FAQ"
+          tag="Taste & See Info"
           title="Frequently Asked Questions"
-          description="Have questions before reaching out? Find quick answers right here."
+          description="Got questions about our hours, location, or catering services? Find quick answers right here."
           items={[
-            { question: "What are your support hours?", answer: "Our support team is available Monday through Friday, 9:00 AM to 6:00 PM EST." },
-            { question: "How fast can I expect a response?", answer: "We aim to respond to all inquiries within 24 business hours." },
-            { question: "Where is your main office located?", answer: "Our headquarters are based in San Francisco, CA with remote teams globally." },
+            { question: "Where is Taste & See Soul Food Kitchen located?", answer: "We are located at 6820 N Main St Ste E, Columbia, SC 29203." },
+            { question: "How can I place an order for pickup?", answer: "Call us directly at (803) 401-5671 to place your order for quick takeout pickup." },
+            { question: "Do you offer catering for private events?", answer: "Yes! We cater family reunions, church functions, corporate events, and parties. Contact us via the form above or call us for custom catering menus." },
+            { question: "What are your operating hours?", answer: "We are open Tuesday through Saturday from 11:30 AM to 7:00 PM, and Sunday from 12:00 PM to 6:00 PM. Closed Mondays." },
           ]}
           textAnimation="fade-blur"
         />
       </main>
-      <FooterSimple
-        brand="Webild"
-        columns={[
-          {
-            title: "Navigation",
-            items: [
-              { label: "Home", href: "/" },
-              { label: "Features", href: "/features" },
-              { label: "Pricing", href: "/pricing" },
-              { label: "Contact", href: "/contact" },
-            ],
-          },
-          {
-            title: "Support",
-            items: [
-              { label: "Help Center", href: "#" },
-              { label: "Documentation", href: "#" },
-              { label: "System Status", href: "#" },
-            ],
-          },
-        ]}
-        copyright="© 2025 Webild Inc. All rights reserved."
-        links={[
-          { label: "Privacy Policy", href: "#" },
-          { label: "Terms of Service", href: "#" },
-        ]}
-      />
     </div>
   );
 }
