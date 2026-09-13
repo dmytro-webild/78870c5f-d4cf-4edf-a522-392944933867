@@ -7,12 +7,12 @@ import FooterSimple from "@/components/sections/footer/FooterSimple";
 
 export default function ProductsPage() {
   const specials = [
-    { name: "Oxtails (Sat/Sun)", variant: "Rice & Gravy + 2 Sides + Drink", price: "$26.99", imageSrc: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" },
+    { name: "Oxtails (Sat/Sun)", variant: "Rice & Gravy + 2 Sides + Drink", price: "$26.99", imageSrc: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80&_wi=1" },
     { name: "Lobster Lamb Chops", variant: "Rice & Gravy + 2 Sides + Drink", price: "$24.99", imageSrc: "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" },
     { name: "Blackened Salmon", variant: "Rice & Gravy + 2 Sides + Drink", price: "$24.99", imageSrc: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80" },
     { name: "Flounder Seafood Combo", variant: "2 pc Fish, 6 Shrimp, 2 Sides, Hushpuppies", price: "$25.99", imageSrc: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" },
     { name: "3 pc Fried/Baked Chicken", variant: "Includes Rice, Gravy & 2 Sides", price: "$17.99", imageSrc: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80" },
-    { name: "Smothered Pork Chops", variant: "Includes Rice, Gravy & 2 Sides", price: "$20.99", imageSrc: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" },
+    { name: "Smothered Pork Chops", variant: "Includes Rice, Gravy & 2 Sides", price: "$20.99", imageSrc: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80&_wi=2" },
   ];
 
   return (
