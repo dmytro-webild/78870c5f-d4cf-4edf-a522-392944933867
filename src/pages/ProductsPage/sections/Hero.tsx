@@ -13,7 +13,7 @@ export default function HeroSection(): React.JSX.Element {
               description="Serving mouthwatering traditional soul food, seafood combos, whole wing baskets, homemade sides, and desserts."
               primaryButton={{ text: "Call to Order: 803-401-5671", href: "tel:8034015671" }}
               secondaryButton={{ text: "Visit Location", href: "https://maps.google.com/?q=6820+N+Main+St+Ste+E+Columbia+SC" }}
-              imageSrc="https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp"
+              imageSrc="https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp?_wi=2"
               textAnimation="slide-up"
             />
     </div>

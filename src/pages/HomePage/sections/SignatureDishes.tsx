@@ -35,7 +35,7 @@ const items = [
   {
     title: "",
     description: "",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1787070662778-t3nkrha7.webp?_wi=1"
   },
   {
     title: "",
