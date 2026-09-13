@@ -36,6 +36,8 @@ export default function Layout() {
     "href": "#testimonials"
   },
   { name: "Order Online", href: "/order" },
+  { name: "Products", href: "/products" },
+
 
 ];
 
