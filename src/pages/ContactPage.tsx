@@ -16,7 +16,7 @@ export default function ContactPage() {
           ]}
           textarea={{ name: "message", placeholder: "Tell us about your event or inquiry...", rows: 5, required: true }}
           buttonText="Send Inquiries"
-          imageSrc="https://picsum.photos/seed/1634594426/1200/800"
+          imageSrc="https://storage.googleapis.com/webild/users/user_3Db0miCCMRaaN0onIJ91PjmSp14/uploaded-1789326274845-62fsglau.webp"
           textAnimation="slide-up"
         />
         <FaqSimple
