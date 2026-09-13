@@ -6,13 +6,11 @@
 
 import React from 'react';
 import HeroBillboardSection from './ProductsPage/sections/HeroBillboard';
-import ProductQuantityCardsSection from './ProductsPage/sections/ProductQuantityCards';
 
 export default function ProductsPage(): React.JSX.Element {
   return (
 <>
       <HeroBillboardSection />
-      <ProductQuantityCardsSection />
     </>
   );
 }
