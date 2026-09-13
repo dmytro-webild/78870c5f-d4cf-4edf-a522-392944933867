@@ -1,9 +1,7 @@
-import { routes } from "@/routes";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
 import FaqSimple from "@/components/sections/faq/FaqSimple";
-export default function ContactPage() {
-  const navItems = routes.map((r) => ({ name: r.label, href: r.path }));
 
+export default function ContactPage() {
   return (
     <div className="min-h-svh bg-background text-foreground">
       <main className="">
